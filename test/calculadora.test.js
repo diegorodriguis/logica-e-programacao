@@ -33,4 +33,12 @@ describe('Testes da Função de Soma', function () {
         //Compara o resultado com o valor que voce espera
         expect(resultadoDaSoma).to.equal(1);
     });
+
+    it('A função deve somar dois numeros zerados', function() {
+         //Coleta o resultado da função
+        const resultadoDaSoma = somarDoisNumeros(0, 0);
+
+        //Compara o resultado com o valor que voce espera
+        expect(resultadoDaSoma).to.equal(0);
+    });
 });
